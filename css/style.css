@@ -643,3 +643,14 @@ a{
     }
     
 }
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff url('https://cdn.dribbble.com/users/889322/screenshots/7776561/media/c79a7ef8cfae42e45647d25d42dc934d.gif') no-repeat center center;
+    background-size: cover;
+    z-index: 9999;
+}
+.no-scroll {
+    overflow: hidden;
+ }
