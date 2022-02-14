@@ -9,7 +9,7 @@ $(function(){
 });
 
 jQuery(document).ready(function() {
-    jQuery('#loading').fadeOut(500);
+    jQuery('#loading').fadeOut(300);
 });
 
 $(window).on("load", function() {
