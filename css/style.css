@@ -421,6 +421,11 @@ a{
     color: #fff;
     height: 100px;
 }
+.scroll_up {
+    position: fixed;
+    right: 2.2rem;
+    bottom: 2.57rem;
+  }
 @media (max-width: 1140px) {
     .services__item:hover{
         width: 450px;
@@ -653,4 +658,13 @@ a{
 }
 .no-scroll {
     overflow: hidden;
+ }
+ .scroll_up {
+     transition: 1s;
+     border: none;
+     background: none;
+ }
+ .hidden{
+    opacity: 0;
+    transition: 1s;
  }
