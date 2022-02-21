@@ -10,6 +10,17 @@ body{
     font-size: 300;
     color: #2C2B2B;
     font-family: 'Oswald', sans-serif;
+    overflow-y: scroll;
+}
+body::-webkit-scrollbar{
+    width: 10px;
+    background-color:#161d41;
+}
+body::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    border: 4px solid;
+    background-clip: content-box;
+    background: #245fb9;
 }
 a{
     text-decoration: none;
@@ -224,7 +235,6 @@ a{
     opacity: 0;
 }
 .services__item._active{
-
     transform: translate(0px, 0px);
     transition: all 0.8s ease 0s;
     opacity: 1;
@@ -407,7 +417,6 @@ a{
 .contacts__btn{
     border: none;
     color: #fff;
-    margin-top: 78px;
     cursor: pointer;
     border: 2px solid #fff;
 }
@@ -424,8 +433,29 @@ a{
 .scroll_up {
     position: fixed;
     right: 2.2rem;
-    bottom: 2.57rem;
+    bottom: 2
+    .57rem;
   }
+  .submit_modal{
+    width: 300px;
+    height: 185px;
+    background-color: #c39c75;
+    text-align: center;
+    vertical-align: middle;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    overflow: hidden;
+    transition: 1s;
+}
+.modal_show {
+    opacity: 1;
+}
 @media (max-width: 1140px) {
     .services__item:hover{
         width: 450px;
@@ -619,7 +649,6 @@ a{
     }
     .contacts__btn {
         color: #fff;
-        margin-top: 20px;
         padding: 14px 0px 14px;
     }
     .carousel .slick-dots button {

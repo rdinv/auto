@@ -38,3 +38,14 @@ const goToTop = () => {
     });
   };
 backToTopButton.addEventListener("click", goToTop);
+
+// modal window after submit form
+const submitBTN = document.querySelector('.contacts__btn'),
+      submitModal = document.querySelector('.submit_modal');
+
+submitBTN.onclick = function(){
+  submitModal.classList.add('modal_show');
+  setTimeout(function() {
+    submitModal.classList.remove('modal_show');
+}, 2000);
+};
