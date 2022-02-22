@@ -433,13 +433,12 @@ a{
 .scroll_up {
     position: fixed;
     right: 2.2rem;
-    bottom: 2
-    .57rem;
+    bottom: 2.57rem;
   }
   .submit_modal{
     width: 300px;
     height: 185px;
-    background-color: #c39c75;
+    background-color: #161d41;
     text-align: center;
     vertical-align: middle;
     position: fixed;
@@ -451,7 +450,9 @@ a{
     transform: translate(-50%, -50%);
     opacity: 0;
     overflow: hidden;
-    transition: 1s;
+    transition: .8s;
+    color: #c4c4c4;
+    border-radius: 20px;
 }
 .modal_show {
     opacity: 1;

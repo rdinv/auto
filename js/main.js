@@ -47,5 +47,5 @@ submitBTN.onclick = function(){
   submitModal.classList.add('modal_show');
   setTimeout(function() {
     submitModal.classList.remove('modal_show');
-}, 2000);
+  }, 2000);
 };
