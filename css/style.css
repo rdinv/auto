@@ -449,13 +449,14 @@ a{
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-    overflow: hidden;
+    visibility: hidden;
     transition: .8s;
     color: #c4c4c4;
     border-radius: 20px;
 }
 .modal_show {
     opacity: 1;
+    visibility: visible;
 }
 @media (max-width: 1140px) {
     .services__item:hover{
